@@ -1,7 +1,7 @@
 # Dot-Files
 *These are my dotfiles, none of your dotfiles. :P*
 
-![Mine DotFiles](https://i.imgur.com/2Qmm5BY.png)
+![Mine DotFiles](https://i.imgur.com/a0qDdtI.png)
 
 ## xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
