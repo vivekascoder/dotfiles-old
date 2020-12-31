@@ -3,6 +3,10 @@
 
 ![Mine DotFiles](https://i.imgur.com/a0qDdtI.png)
 
+## PolioBar
+- My custom configuration of polybar.
+- You can find at `polybar/poliobar`.
+
 ## xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.

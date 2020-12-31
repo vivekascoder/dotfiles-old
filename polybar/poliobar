@@ -1,0 +1,300 @@
+;===============================================================================
+;
+; ██████╗  ██████╗ ██╗     ██╗ ██████╗ ██████╗  █████╗ ██████╗     ██╗ ██╗ ██╗  
+; ██╔══██╗██╔═══██╗██║     ██║██╔═══██╗██╔══██╗██╔══██╗██╔══██╗    ╚██╗╚██╗╚██╗ 
+; ██████╔╝██║   ██║██║     ██║██║   ██║██████╔╝███████║██████╔╝     ╚██╗╚██╗╚██╗
+; ██╔═══╝ ██║   ██║██║     ██║██║   ██║██╔══██╗██╔══██║██╔══██╗     ██╔╝██╔╝██╔╝
+; ██║     ╚██████╔╝███████╗██║╚██████╔╝██████╔╝██║  ██║██║  ██║    ██╔╝██╔╝██╔╝ 
+; ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝ ╚═╝ ╚═╝  
+; 
+;              WHEN POLIO ATTACKS THE POLYBAR THEN WE GET POLIOBAR, 
+;===============================================================================
+
+
+[colors]
+background = #272822
+; background-alt = #75715E
+background-alt = #444
+foreground = #F8F8F2
+red = #F92672
+orange = #FD971F
+yellow = #E6DB74
+green = #A6E22E
+blue = #A6E22E
+purple = #AE81FF
+
+
+[bar/polio]
+width = 100%
+height = 27
+radius = 6.0
+fixed-center = false
+bottom = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+modules-left = i3
+modules-right = pulseaudio cpu memory date temperature filesystem battery
+module-margin = 2
+
+tray-position = right
+tray-detached = false
+tray-maxsize = 16
+;tray-transparent = false
+
+
+; Fonts Goes Here >-->
+font-0 = "Cascadia Code:size=11"
+font-1 = "Noto Color Emoji:scale=10:style=Regular;2"
+font-2 = "Font Awesome:style=Regular"
+
+line-size = 3
+border-size = 4
+;border-color = ${colors.background-alt}
+border-color = #00000000
+
+
+
+; [I3]=====================>
+; Handles the workspace in the bar.
+; Reference: https://github.com/polybar/polybar/wiki/Module:-i3
+
+[module/i3]
+
+; Basic Configuration
+type = internal/i3
+pin-workspaces = false
+strip-wsnumbers = true
+enable-click = true
+enable-scroll = true
+wrapping-scroll = true
+reverse-scrolling = true
+fuzzy-match = true
+
+; 🔴 🟠 🟡 🟢 🔵 🟣 ⚫️ ⚪️ 🟤
+; Setting the workspace icons.
+ws-icon-0 = 1;🔴
+ws-icon-1 = 2;🟠
+ws-icon-2 = 3;🟡
+ws-icon-3 = 4;🟢
+ws-icon-4 = 5;🔵
+ws-icon-5 = 6;🟣
+ws-icon-6 = 7;⚫️
+ws-icon-7 = 8;⚪️
+ws-icon-8 = 9;🟤
+
+
+; Setting the label
+format = <label-state> 
+label-mode = 
+label-mode-padding = 1
+label-mode-background = ${colors.background}
+
+label-focused = %icon%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background-alt}
+label-focused-padding = 1
+label-focused-underline = ${colors.yellow}
+
+label-unfocused = %icon%
+label-unfocused-padding = 1
+
+label-urgent = %icon%
+label-urgent-background = ${colors.purple}
+label-urgent-padding = 1
+
+
+
+; [XKEYBOARD]=====================>
+; Handles the some keys state.
+; Reference: https://github.com/polybar/polybar/wiki/Module:-xkeyboard
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+
+format = <label-layout> 
+format-spacing = 0
+
+
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.yellow}
+
+label-layout = %layout%
+label-layout-underline = ${colors.yellow}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.red}
+label-indicator-underline = ${colors.yellow}
+
+
+; [BACKLIGHT]=====================>
+; Handles Controls the screen brightness.
+; Reference: https://github.com/polybar/polybar/wiki/Module:-backlight
+; NOTE: NOTE ACTIVE.
+
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
+enable-scroll = true
+
+format = <ramp>
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = ADP1
+
+poll-interval = 5
+
+time-format = %H:%M
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+format-charging-underline = ${colors.orange}
+format-discharging-underline = ${colors.orange}
+label-full = Fully charged
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+bar-capacity-width = 10
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+animation-discharging-framerate = 500
+
+
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format = <label>
+format-underline = ${colors.green}
+
+label =  %percentage%%
+
+
+[module/memory]
+; Icon: 
+type = internal/memory
+interval = 3
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground}
+format-underline = #4bffdc
+label = %percentage_used%%
+
+[module/date]
+
+type = internal/date
+
+interval = 1.0
+date = %Y-%m-%d%
+
+time = %H:%M
+
+
+time-alt = %Y-%m-%d %H:%M
+
+format =  <label>
+format-foreground = ${colors.foreground}
+format-underline = ${colors.yellow}
+
+label = %time%
+
+
+[module/temperature]
+
+type = internal/temperature
+
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+base-temperature = 20
+warm-temperature = 60
+units = true
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+format-underline = ${colors.purple}
+label = %temperature-c%
+label-warn =  %temperature-c%
+label-warn-foreground = ${colors.foreground}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+
+
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+interval = 30
+fixed-values = true
+format-mounted = <label-mounted>
+format-unmounted = <label-unmounted>
+label-mounted =  %used%
+label-unmounted = %mountpoint%: not mounted
+label-unmounted-foreground = #55
+label-mounted-underline = ${colors.red}
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <label-volume> <bar-volume>
+label-volume =  %percentage%%
+label-volume-foreground = ${root.foreground}
+
+label-muted =  MUTE
+label-muted-foreground = #666
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = |
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground}
+; click-right = pavucontrol
+click-middle = pavucontrol
+
+[global/wm]
+
+margin-bottom = 5
+margin-top = 5
