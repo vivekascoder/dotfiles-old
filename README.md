@@ -6,6 +6,8 @@
 ## PolioBar
 - My custom configuration of polybar.
 - You can find at `polybar/poliobar`.
+- Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
+- FontAwesome: `sudo apt install fonts-font-awesome`
 
 ## xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
