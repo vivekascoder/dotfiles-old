@@ -4,6 +4,8 @@
 ![Mine DotFiles](./screenshots/custom_polybar.png)
 
 <div style="text-align:center"><img src="https://i.imgur.com/a0qDdtI.png" /></div>
+
+
 ## PolioBar :computer:
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
