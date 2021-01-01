@@ -1,15 +1,15 @@
-# Dot-Files
+# :snowflake: Dot-Files :rocket:
 *These are my dotfiles, none of your dotfiles. :P*
 
 ![Mine DotFiles](https://i.imgur.com/a0qDdtI.png)
-
-## PolioBar
+![Noob Ricing](./screenshots/custom_polybar.png )
+## PolioBar :computer:
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
 - FontAwesome: `sudo apt install fonts-font-awesome`
 
-### Setup
+### :: Setup :rocket:
 - Installing Required Fonts.
     + Installing Cascadia Code Font.
     + `sudo apt install fonts-cascadia-code`
@@ -23,7 +23,7 @@
     + `sudo apt install nm-tray`
 - Setting up the configuration file.
     + Copy the `polybar/poliobar` file to `~/.config/polybar/poliobar`
-    + > NOTE: You can also give it the name of `config` but then you need to modify the `launch.sh` file in `poliobar/`.
+    + > :warning: NOTE: You can also give it the name of `config` but then you need to modify the `launch.sh` file in `poliobar/`.
 - Running the Polybar in `i3` or `i3-gaps`.
     + Copy `polybar/launch.sh` from the repository to  `~/.config/polybar/launch.sh`
     + Give the executable permissions to `launch.sh` by.
@@ -40,7 +40,8 @@
 ## xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.
-- **STEPS TO CONFIGURE**:
+### Setup :rocket:
+- Setup necessary files.
     + Goto `/etc/X11/xorg.conf.d/`, create if you don't have these folders. 
     + Then create `90-touchpad.conf` and paste the content from my repository's file.
 - Thanks to `Cody Craven` check his article here.
