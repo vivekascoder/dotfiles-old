@@ -2,14 +2,15 @@
 *These are my dotfiles, none of your dotfiles. :P*
 
 ![Mine DotFiles](https://i.imgur.com/a0qDdtI.png)
-![Noob Ricing](./screenshots/custom_polybar.png )
+
+<div style="text-align:center"><img src="./screenshots/custom_polybar.png" /></div>
 ## PolioBar :computer:
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
 - FontAwesome: `sudo apt install fonts-font-awesome`
 
-### :: Setup :rocket:
+### :rocket: Setup
 - Installing Required Fonts.
     + Installing Cascadia Code Font.
     + `sudo apt install fonts-cascadia-code`
@@ -37,10 +38,10 @@
     + That's it, you now have a complete functional polybar.
 
 
-## xorg.conf.d
+## :v: xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.
-### Setup :rocket:
+### :rocket: Setup
 - Setup necessary files.
     + Goto `/etc/X11/xorg.conf.d/`, create if you don't have these folders. 
     + Then create `90-touchpad.conf` and paste the content from my repository's file.
