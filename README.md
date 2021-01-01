@@ -1,12 +1,14 @@
 # :snowflake: Dot-Files :rocket:
 *These are my dotfiles, none of your dotfiles. :P*
 
+<p align="center"><img src="https://i.imgur.com/a0qDdtI.png" /></p>
+
 ![Mine DotFiles](./screenshots/custom_polybar.png)
 
-<div style="text-align:center"><img src="https://i.imgur.com/a0qDdtI.png" /></div>
 
 
-## PolioBar :computer:
+
+## :computer: PolioBar
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
@@ -51,3 +53,5 @@
 - https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
 
 
+
+> :speech_balloon: Join Our Community: https://discord.gg/8dC7QAF6r8
