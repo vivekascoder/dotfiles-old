@@ -29,7 +29,9 @@ width = 100%
 height = 27
 radius = 6.0
 fixed-center = false
-bottom = true
+;bottom = true
+
+;offset-x = 200
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -37,10 +39,12 @@ foreground = ${colors.foreground}
 modules-left = i3
 modules-right = pulseaudio cpu memory date temperature filesystem battery
 module-margin = 2
-
+padding-right = 10
 tray-position = right
-tray-detached = false
-tray-maxsize = 16
+tray-detached = true
+;tray-maxsize = 16
+tray-offset-x = -20
+tray-padding = 4
 ;tray-transparent = false
 
 
@@ -50,7 +54,9 @@ font-1 = "Noto Color Emoji:scale=10:style=Regular;2"
 font-2 = "Font Awesome:style=Regular"
 
 line-size = 3
-border-size = 4
+border-top-size = 4
+border-left-size = 15
+border-right-size = 15
 ;border-color = ${colors.background-alt}
 border-color = #00000000
 
