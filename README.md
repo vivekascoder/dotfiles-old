@@ -41,6 +41,17 @@
     + Then just restart your i3 by <key>mod+shift+r</key>.
     + That's it, you now have a complete functional polybar.
 
+### :earth_asia: Resources
+- FontAwesome Cheat Sheet: http://fontawesome.com/cheatsheet
+    + Contains the list of all the font's unicode symbols.
+- Polybar Wiki: https://github.com/polybar/polybar/wiki
+    + Contains the documentation on how to configure polybar.
+- Polybar Subreddit: https://www.reddit.com/r/Polybar/
+    + It's subreddit of polybar where you can ask questions.
+- Text To Ascii: http://patorjk.com/software/taag
+    + To generate the ascii text for `poliobar`.
+    + You can also use figlet or toilet.
+
 
 ## :v: xorg.conf.d
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
