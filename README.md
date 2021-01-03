@@ -53,7 +53,8 @@
     + You can also use figlet or toilet.
 
 
-## :v: xorg.conf.d
+## :v: Get Touchpad Gestures
+- **xorg.conf.d**:
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.
 ### :rocket: Setup
@@ -64,5 +65,25 @@
 - https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
 
 
+## :bulb: Extra
+
+
+### How to install FontAwesome**5** in Debian or any other distro.
+- Download the zip file of fonts from the below link.
+    + https://use.fontawesome.com/releases/v5.15.1/fontawesome-free-5.15.1-desktop.zip
+- Extract it and go the `otf's` folder where you'll find otf files for the fontawesome5 font.
+- Install it either by clicking it and installing if you're using a gui font manager.
+- If you're not using GUI font installer.
+    + Create directory `~/.fonts` if you don't have.
+    + Then copy all the OTF files of font to this directory.
+- It's a good practice to manually rebuild the font cache so.
+    + `fc-cache -f -v`
+- Finally you've your FontAwesome5 Font.
+
+
+
+
+
+----
 
 > :speech_balloon: Join Our Community: https://discord.gg/8dC7QAF6r8

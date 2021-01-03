@@ -51,7 +51,12 @@ tray-padding = 4
 ; Fonts Goes Here >-->
 font-0 = "Cascadia Code:size=11"
 font-1 = "Noto Color Emoji:scale=10:style=Regular;2"
-font-2 = "Font Awesome:style=Regular"
+; font-2 = "Font Awesome:style=Regular"
+; SUPPORT OF OLD FONTAWESOME PACKAGE ON DEBIAN IS ENDING.
+; SEE HOW TO INSTALL FontAwesome5 PACKAGE IN README.md FILE.
+font-2 = "Font Awesome 5 Free:style=Regular"
+font-3 = "Font Awesome 5 Brands:style=Regular"
+font-4 = "Font Awesome 5 Free Solid:style=Regular"
 
 line-size = 3
 border-top-size = 4
