@@ -8,11 +8,15 @@
 
 
 
+
+
 ## :computer: PolioBar
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
 - FontAwesome: `sudo apt install fonts-font-awesome`
+
+
 
 ### :rocket: Setup
 - Installing Required Fonts.
@@ -21,7 +25,7 @@
     + Installing Noto Font for emoji support.
     + `sudo apt install fonts-noto`
     + Installing the FontAwesome Font for cool unicode symbols.
-    + `sudo apt install fonts-font-awesome`
+    + See the Extra Section down in the file where i've mentioned how to install FontAwesome5.
 - Installing Polybar
     + `sudo apt install polybar`
 - Installing Network Tray.
@@ -41,6 +45,8 @@
     + Then just restart your i3 by <key>mod+shift+r</key>.
     + That's it, you now have a complete functional polybar.
 
+
+
 ### :earth_asia: Resources
 - FontAwesome Cheat Sheet: http://fontawesome.com/cheatsheet
     + Contains the list of all the font's unicode symbols.
@@ -53,16 +59,26 @@
     + You can also use figlet or toilet.
 
 
+
+
+
+
 ## :v: Get Touchpad Gestures
 - **xorg.conf.d**:
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.
+
+
 ### :rocket: Setup
 - Setup necessary files.
     + Goto `/etc/X11/xorg.conf.d/`, create if you don't have these folders. 
     + Then create `90-touchpad.conf` and paste the content from my repository's file.
 - Thanks to `Cody Craven` check his article here.
 - https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
+
+
+
+
 
 
 ## :bulb: Extra
