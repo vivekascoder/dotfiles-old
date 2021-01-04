@@ -16,8 +16,6 @@
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
 - FontAwesome: `sudo apt install fonts-font-awesome`
 
-
-
 ### :rocket: Setup
 - Installing Required Fonts.
     + Installing Cascadia Code Font.
@@ -45,8 +43,6 @@
     + Then just restart your i3 by <key>mod+shift+r</key>.
     + That's it, you now have a complete functional polybar.
 
-
-
 ### :earth_asia: Resources
 - FontAwesome Cheat Sheet: http://fontawesome.com/cheatsheet
     + Contains the list of all the font's unicode symbols.
@@ -60,14 +56,10 @@
 
 
 
-
-
-
 ## :v: Get Touchpad Gestures
 - **xorg.conf.d**:
 - Don't know about you but when i was the DE guy, i used to use the gestures of touchpad.
 - So i figure out how to enable some gestures for tilling-wm.
-
 
 ### :rocket: Setup
 - Setup necessary files.
@@ -77,12 +69,7 @@
 - https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/
 
 
-
-
-
-
 ## :bulb: Extra
-
 
 ### How to install FontAwesome**5** in Debian or any other distro.
 - Download the zip file of fonts from the below link.
@@ -96,7 +83,12 @@
     + `fc-cache -f -v`
 - Finally you've your FontAwesome5 Font.
 
-
+### How to setup Mouse Cursor, Icons etc.
+- Here, we'll be talking about `lxappearance`.
+- **How to install lxappearance**
+    + `sudo apt install lxappearance`
+- Then open it and change you icons, cursors, etc.
+- You can download cursor themes and icon themes from `xfce-look`, 'kde store', `gnome look`, etc.
 
 
 
