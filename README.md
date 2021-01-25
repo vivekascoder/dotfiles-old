@@ -3,14 +3,21 @@
 
 <p align="center"><img src="https://i.imgur.com/a0qDdtI.png" /></p>
 
+![Gruvbox-PyWal-Screenshot](screenshots/gruvbar_pink.png)
+
+## Gruvbox_bar
+- Another polybar config based on `Gruvbox Color Scheme`.
+- Having the layout as indicated in the above screenshot.
+- You can use this config from the `/polybar/gruvbox_bar.cfg`.
+
+<br>
+----
+<br>
+
 ![Mine DotFiles](./screenshots/custom_polybar.png)
 
 
-
-
-
-
-## :computer: PolioBar
+## :computer: Poliobar
 - My custom configuration of polybar, i call it `PolioBar`.
 - You can find at `polybar/poliobar`.
 - Fonts: `FontAwesome`, `Noto Emoji`, `Cascadia Code`
@@ -43,7 +50,7 @@
     + Then just restart your i3 by <key>mod+shift+r</key>.
     + That's it, you now have a complete functional polybar.
 
-### :earth_asia: Resources
+#### :earth_asia: Resources
 - FontAwesome Cheat Sheet: http://fontawesome.com/cheatsheet
     + Contains the list of all the font's unicode symbols.
 - Polybar Wiki: https://github.com/polybar/polybar/wiki
