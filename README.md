@@ -5,7 +5,7 @@
 
 
 ### V3 Polybar screenshot.
-![V3 Ricing Screenshot](screenshots/2021-01-29_1920x1080.png)
+
 - Bar: Polybar `./polybar/v3/`
 - Applications: ranger, cava, sxiv, neofetch, htop, neovim
 - Font: Iosevka Nerd Font.
@@ -13,7 +13,7 @@
   - You can messege me if you want this font.
 - Terminal Font: Iosevka Term Nerd Font
 
-
+![V3 Ricing Screenshot](screenshots/2021-01-29_1920x1080.png)
 
 ## Gruvbox_bar
 - Another polybar config based on `Gruvbox Color Scheme`.
