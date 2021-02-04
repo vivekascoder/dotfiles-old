@@ -6,20 +6,32 @@
 
 ### V3 Polybar screenshot.
 ![V3 Ricing Screenshot](screenshots/2021-01-29_1920x1080.png)
+- Bar: Polybar `./polybar/v3/`
+- Applications: ranger, cava, sxiv, neofetch, htop, neovim
+- Font: Iosevka Nerd Font.
+- Polybar Icon Font: Custom Patched Font.
+  - You can messege me if you want this font.
+- Terminal Font: Iosevka Term Nerd Font
 
 
-
-![Gruvbox-PyWal-Screenshot](screenshots/gruvbar_pink.png)
 
 ## Gruvbox_bar
 - Another polybar config based on `Gruvbox Color Scheme`.
 - Having the layout as indicated in the above screenshot.
 - You can use this config from the `/polybar/gruvbox_bar.cfg`.
 
+![Gruvbox-PyWal-Screenshot](screenshots/gruvbar_pink.png)
+
+
 <br>
 ----
 <br>
 
+### V1 Old Rice.
+- Bar: Polybar `./polybar/v1/`
+- Applications: xfce4-terminal, firefox, sublime.
+- Font: Cascadia Code.
+- Polybar Icon Font: FontAwesome5
 ![Mine DotFiles](./screenshots/custom_polybar.png)
 
 
