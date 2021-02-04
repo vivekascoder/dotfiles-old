@@ -3,6 +3,12 @@
 
 <p align="center"><img src="https://i.imgur.com/a0qDdtI.png" /></p>
 
+
+### V3 Polybar screenshot.
+![V3 Ricing Screenshot](screenshots/2021-01-29_1920x1080.png)
+
+
+
 ![Gruvbox-PyWal-Screenshot](screenshots/gruvbar_pink.png)
 
 ## Gruvbox_bar
