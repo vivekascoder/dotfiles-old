@@ -41,7 +41,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-
+exec --no-startup-id kitty -name dropdown 
+exec --no-startup-id ssh-add ~/.ssh/id_github
 
 
 #  _   __ _______   __ ______ _____ _   _______ _____ _   _ _____ _ _____ 
@@ -170,7 +171,7 @@ bindsym $mod+ctrl+v exec pavucontrol &
 bindsym $mod+b exec sensible-browser &
 
 # A Single line utility to select emoji.
-bindsym $mod+m exec "cat $HOME/.config/all_emojis.txt | rofi -dmenu | cut -b 1-4 | xsel -bv"
+bindsym $mod+m exec "cat $HOME/.config/all_emojis.txt | rofi -dmenu -i | cut -b 1-4 | xsel -bv"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -199,9 +200,10 @@ mode "resize" {
 ## CUSTOM KEY BINDINGS.
 bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+shift+w exec rofi -show window
-bindsym $mod+ctrl+e exec $HOME/cookbook/bash/edit.py
 bindsym $mod+r mode "resize"
 
+bindsym $mod+u [class="dropdown"] scratchpad show
+# [instance="dropdown"] move position center
 
 
 
@@ -222,12 +224,18 @@ assign [class="obs"] 9
 assign [class="office"] 8
 assign [class="Code"] 3
 assign [class="Microsoft Teams - Preview"] 7
+for_window [class="^Plank*"] floating enable
 
 
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 2
 
-gaps inner 15
-gaps outer 5
+for_window [class="dropdown"] floating enable
+for_window [class="dropdown"] resize set 625 400
+for_window [class="dropdown"] move scratchpad
+for_window [class="dropdown"] border pixel 5
+
+gaps inner 20
+gaps outer 0
 
 bindsym $mod+ctrl+Up gaps inner current plus 5
 bindsym $mod+ctrl+Down gaps inner current minus 5
@@ -236,9 +244,13 @@ bindsym $mod+ctrl+Left gaps outer current plus 5
 bindsym $mod+ctrl+Right gaps outer current minus 5
 # smart_borders on
 smart_borders no_gaps
+set_from_resource $focused_color color14 #00000000
+set_from_resource $unfocused_color color7 #00000000
 client.focused          #bd93f9 #bd93f9 #bd93f9 #bd93f9 #bd93f9
+# client.focused          $focused_color $focused_color $focused_color $focused_color $focused_color
 #client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #6272a4 #6272a4 #6272a4 #6272a4 #6272a4
+# client.unfocused        $unfocused_color $unfocused_color $unfocused_color $unfocused_color $unfocused_color
 #client.urgent           #2f343a #900000 #ffffff #900000   #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
